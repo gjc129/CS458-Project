@@ -1,0 +1,19 @@
+25 September 2018
+Comments/Thoughts
+========================================
+if(scanned code is not in system)
+    -generate new meter
+    -track geolocation
+    
+if( is in system)
+    -take to payment menu
+    -give option to add credit
+    
+========================================
+- issue arises when a person moves from one spot to another
+  - for example, person pays for meter 00034 and then has time there, but leaves that parking spot and moves to a different meter 00020
+    does the data base display both meters at the same time, and so, does it then display the time remaining for both, or does it work 
+    a way to bypass this, or know a difference and decipher the difference between the two.
+========================================
+
+
