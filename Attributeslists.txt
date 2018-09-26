@@ -1,0 +1,10 @@
+Users					          Parking Meter				Security Personnel				Account
+------------			      -------------				------------------				-------
+U_USERID				        P_METERID					   S_WORKERID						    A_ACCOUNTID
+u_phonenumber			      p_timeremaining(mv)	 s_firstname						  a_username
+u_firstname				      p_currentuser				 s_schedule(mv)					  a_password
+u_credit				        p_previoususer			 s_lastname							
+u_lastname				      p_usestoday					 s_phonenumber
+u_licenseplatenum(mv)	  p_isinuse					
+
+
