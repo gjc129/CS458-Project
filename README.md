@@ -5,10 +5,12 @@ In this repository is all the files that I have accumulated for the CS 458 proje
 
 This is MY official documentation for the project to ensure there is no missing paperwork.
 
-===========================================
+
 LOG:
 ===========================================
 
 Sept 25th: Created E-R Diagram, relational structure form
 
 Sept 26th: added RMMM document
+
+Sept 28th: added comments text file
