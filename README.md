@@ -14,3 +14,6 @@ Sept 25th: Created E-R Diagram, relational structure form
 Sept 26th: added RMMM document
 
 Sept 28th: added comments text file
+
+Sept 29th: added ER Diagram option 2(CS458ERDiagramoption2); replaced CS458ERDiagram(1).pdf with CS458ERDiagramoption1.pdf
+           added xml file of ER diagram option 2 for possible updating;
