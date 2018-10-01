@@ -17,3 +17,5 @@ Sept 28th: added comments text file
 
 Sept 29th: added ER Diagram option 2(CS458ERDiagramoption2); replaced CS458ERDiagram(1).pdf with CS458ERDiagramoption1.pdf
            added xml file of ER diagram option 2 for possible updating;
+
+Oct 1st: added Database Scenario file to beter explain database reasoning;
