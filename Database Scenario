@@ -1,0 +1,6 @@
+Database Scenario
+
+Users create accounts for the parkingfriendly application, accounts can be controlled either by security personnel
+or by users looking for parking. Security personnel monitor the meters for tampering, or to issue tickets, 
+tickets are issued to users that do not pay for the meter that they are parking at, the parking meters accept credits from the user
+to pay for the parking meter.
