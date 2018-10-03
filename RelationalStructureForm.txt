@@ -18,17 +18,23 @@ Regular_Acct(ACCOUNTID)
 	foreign key (accountid) references Account
 
 Security_Issues(PERSONID, TICKETID)
+	foreign key (personid) references Person
 	foreign key (ticketid) references Ticket
 	
 Security_Monitors(PERSONID, METERID)
+	foreign key (personid) references Person
+	foreign key (meterid) references Parking_Meter
 
 Security_Gets(PERSONID, SCHEDULEID)
+	foreign key (personid) references Person
 	foreign key (scheduleid) references Schedule
 
 User_Pays(PERSONID, TICKETID)
+	foreign key (personid) references Person
 	foreign key (ticketid) references Ticket
 	
 User_Credits(PERSONID, METERID)
+	foreign key (personid) references Person
 	foreign key (meterid) references Meter
 
 Parking_Meter(METERID, timeremaining, currentuser, previoususer, usestoday, isinuse)
