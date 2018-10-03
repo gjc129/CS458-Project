@@ -1,0 +1,9 @@
+- created the relational structure form for the database
+
+- created the create table form for the entity classes
+
+- need to add drop table statements and test in sqlplus to make sure no errors occur in creating tables
+
+- need to look into postgresql to understand queries and such for using in webpages
+
+- need to figure out how and where to host database
