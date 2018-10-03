@@ -5,7 +5,7 @@ Person(PERSONID, firstname, lastname, phonenumber, issecurity, isuser)
 Security_Personnel(PERSONID)
 	foreign key (personid) references Person
 
-User(PERSONID)
+User(credit, PERSONID)
 	foreign key (personid) references Person
 
 Account(ACCOUNTID, username, password, personid, isregular, isadmin)
@@ -39,6 +39,6 @@ User_Credits(PERSONID, METERID)
 
 Parking_Meter(METERID, timeremaining, currentuser, previoususer, usestoday, isinuse)
 
-Ticket(TICKETID, price, due_date, date_issued, issuedby, issuedto)
+Ticket(TICKETID, price, due_date, date_issued, issuedby, issuedto, ispaid)
 
 Schedule(SCHEDULEID, daytowork)
