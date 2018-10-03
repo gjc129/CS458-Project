@@ -1,4 +1,6 @@
 -- Create Table Form
+
+-- NOTE: need to add better description attributes for user(license plate#, color, etc)
 ----------------------------------------------------
 --1
 drop table Person cascade constraints;
