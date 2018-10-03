@@ -1,35 +1,38 @@
-Relational Structure Form:
+Relational Structure Form
+-----------------------------------------------
+Person(PERSONID, firstname, lastname, phonenumber, issecurity, isuser)
 
-Account(A_ACCOUNTID, a_username, a_password)
+Security_Personnel(PERSONID)
+	foreign key (personid) references Person
 
-Account_For_Users(A_ACCOUNTID, U_USERID)
-	foreign key (a_accountid) references Account
-	foreign key (u_userid) references Users
+User(PERSONID)
+	foreign key (personid) references Person
 
-Users(U_USERID, u_firstname, u_lastname, u_phonenumber, u_credit 
+Account(ACCOUNTID, username, password, personid, isregular, isadmin)
+	foreign key (personid) references Person
 
-Users_Vehicle(U_USERID, U_LICENSEPLATENUM) 
-	foreign key(u_userid) references Users
+Admin_Acct(ACCOUNTID)
+	foreign key (accountid) references Account
 
-Users_Use_Meter(U_USERID, P_METERID)
-	foreign key (u_userid) references Users
-	foreign key (p_meterid) references Parking_Meter
+Regular_Acct(ACCOUNTID)
+	foreign key (accountid) references Account
 
-Parking_Meter(P_METERID, p_currentuser, p_previoususer, p_usestoday, p_isinuse
-
-Parking_Time(P_METERID, P_TIMEREMAINING)
-	foreign key (p_meterid) references Parking_Meter
-
-Security_Personnel(S_WORKERID, s_firstname, s_lastname, s_phonenumber
-
-Security_Schedule(S_WORKERID, S_SCHEDULE)
-	foreign key (S_WORKERID) references Security_Personnel
+Security_Issues(PERSONID, TICKETID)
+	foreign key (ticketid) references Ticket
 	
-Security_Tickets_Users(U_USERID, S_WORKERID)
-	foreign key (u_userid) references Users
-	foreign key (s_workerid) references Security_Personnel
+Security_Monitors(PERSONID, METERID)
+
+Security_Gets(PERSONID, SCHEDULEID)
+	foreign key (scheduleid) references Schedule
+
+User_Pays(PERSONID, TICKETID)
+	foreign key (ticketid) references Ticket
 	
-Security_Checks_Meter(S_WORKERID, P_METERID)
-	foreign key (s_workerid) references Security_Personnel
-	foreign key (p_meterid) references Parking_Meter
-	
+User_Credits(PERSONID, METERID)
+	foreign key (meterid) references Meter
+
+Parking_Meter(METERID, timeremaining, currentuser, previoususer, usestoday, isinuse)
+
+Ticket(TICKETID, price, due_date, date_issued)
+
+Schedule(SCHEDULEID, daytowork)
