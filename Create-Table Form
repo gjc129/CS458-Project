@@ -1,6 +1,8 @@
-Create Table Form
+-- Create Table Form
 ----------------------------------------------------
 --1
+drop table Person cascade constraints;
+
 CREATE TABLE Person
 (PERSONID      char(6),
  firstname     varchar(14),
@@ -12,12 +14,17 @@ CREATE TABLE Person
 );
 
 --2
+drop table Security_Personnel;
+
 CREATE TABLE Security_Personnel
 ( PERSONID    char(6),
   foreign key(accountid) references Person
 );
 
  --3
+ 
+drop table User;
+
 CREATE TABLE User
 ( credit      int,
   personid    char(6),
@@ -25,6 +32,9 @@ CREATE TABLE User
 );
  
  --4
+ 
+ drop table Account cascade constraints;
+ 
 CREATE TABLE Account
 ( ACCOUNTID   char(8),
   username    varchar(20),
@@ -37,18 +47,27 @@ CREATE TABLE Account
 );
   
 --5
+
+drop table Admin_Acct;
+
 CREATE TABLE Admin_Acct
 ( ACCOUNTID   char(8),
   foreign key (accountid) references Account
 );
 
 --6
+
+drop table Regular_Acct;
+
 CREATE TABLE Regular_Acct
 ( ACCOUNTID   char(8),
   foreign key (accountid) references Account
 );
 
 --7
+
+drop table Ticket;
+
 CREATE TABLE Ticket
 ( TICKETID      char(5),
   price         int,
@@ -61,6 +80,9 @@ CREATE TABLE Ticket
 );
 
 --8
+
+drop table Parking_Meter;
+
 CREATE TABLE Parking_Meter
 ( METERID         char(4),
   timeremaining   time,
@@ -72,6 +94,9 @@ CREATE TABLE Parking_Meter
 );
 
 --9
+
+drop table Schedule;
+
 CREATE TABLE Schedule
 ( SCHEDULEID    char(3),
   daytowork     varchar(5),
@@ -79,6 +104,9 @@ CREATE TABLE Schedule
 );
   
 --10
+
+drop table Security_Issues;
+
 CREATE TABLE Security_Issues
 ( PERSONID    char(6),
   ticketid    char(5),
@@ -87,6 +115,9 @@ CREATE TABLE Security_Issues
 );
 
 --11
+
+drop table Security_Monitors;
+
 CREATE TABLE Security_Monitors
 ( PERSONID    char(6),
   meterid     char(4),
@@ -95,6 +126,9 @@ CREATE TABLE Security_Monitors
 );
 
 --12
+
+drop table Security_Gets;
+
 CREATE TABLE Security_Gets
 ( PERSONID    char(6),
   scheduleid  char(3),
@@ -103,6 +137,9 @@ CREATE TABLE Security_Gets
 );
 
 --13
+
+drop table User_Pays;
+
 CREATE TABLE User_Pays
 ( PERSONID    char(6),
   ticketid    char(5),
@@ -111,6 +148,9 @@ CREATE TABLE User_Pays
 );
 
 --14
+
+drop table User_Credits;
+
 CREATE TABLE User_Credits
 ( PERSONID   char(6),
   meterid    char(6),
