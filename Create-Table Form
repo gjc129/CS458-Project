@@ -1,0 +1,98 @@
+Create Table Form
+----------------------------------------------------
+
+CREATE TABLE Person
+(PERSONID      char(6),
+ firstname     varchar(14),
+ lastname      varchar(14),
+ phonenumber   char(7),
+ issecurity    char(1),
+ isuser        char(1),
+ primary key (personid) 
+);
+
+CREATE TABLE Security_Personnel
+( PERSONID    char(6),
+  foreign key(accountid) references Person
+);
+
+ 
+CREATE TABLE User
+( PERSONID    char(6),
+  foreign key(personid) references Person
+);
+ 
+CREATE TABLE Account
+( ACCOUNTID   char(8),
+  username    varchar(20),
+  password    varchar(20),
+  personid    char(6),
+  isregular   char(1),
+  isadmin     char(1),
+  primary key (accountid),
+  foreign key (personid) references Person
+);
+  
+CREATE TABLE Admin_Acct
+( ACCOUNTID   char(8),
+  foreign key (accountid) references Account
+);
+
+CREATE TABLE Regular_Acct
+( ACCOUNTID   char(8),
+  foreign key (accountid) references Account
+);
+
+CREATE TABLE Ticket
+( TICKETID      char(5),
+  price         int,
+  due_date      date,
+  date_issued   date,
+  primary key (ticketid)
+);
+
+CREATE TABLE Parking_Meter
+( METERID         char(4),
+  timeremaining   time,
+  currentuser     char(6),
+  previoususer    char(6),
+  usestoday       varchar(3),
+  isinuse         char(1),
+  primary key(meterid)
+);
+
+CREATE TABLE Schedule
+( SCHEDULEID    char(3),
+  daytowork     varchar(5),
+  primary key(scheduleid)
+);
+  
+CREATE TABLE Security_Issues
+( PERSONID    char(6),
+  ticketid    char(5),
+  foreign key(personid) references Person,
+  foreign key(ticketid) references Ticket
+);
+
+CREATE TABLE Security_Monitors
+( PERSONID    char(6),
+  meterid     char(4),
+  foreign key(personid) references Person,
+  foreign key(meterid) references Parking_Meter
+);
+
+CREATE TABLE Security_Gets
+( PERSONID    char(6),
+  scheduleid  char(3)
+);
+
+CREATE TABLE User_Pays
+( PERSONID    char(6),
+  ticketid    char(5),
+  
+
+
+
+
+
+
