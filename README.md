@@ -21,4 +21,4 @@ Sept 29th: added ER Diagram option 2(CS458ERDiagramoption2); replaced CS458ERDia
 Oct 1st: added Database Scenario file to beter explain database reasoning;
 
 Oct 2nd: added final ER Diagram for database; Deleted all other forms of ER Diagram files from repository; redid the relational
-         structure form;
+         structure form; added the create table form;
