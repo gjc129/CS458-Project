@@ -39,6 +39,6 @@ User_Credits(PERSONID, METERID)
 
 Parking_Meter(METERID, timeremaining, currentuser, previoususer, usestoday, isinuse)
 
-Ticket(TICKETID, price, due_date, date_issued)
+Ticket(TICKETID, price, due_date, date_issued, issuedby, issuedto)
 
 Schedule(SCHEDULEID, daytowork)
