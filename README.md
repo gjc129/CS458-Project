@@ -22,3 +22,6 @@ Oct 1st: added Database Scenario file to beter explain database reasoning;
 
 Oct 2nd: added final ER Diagram for database; Deleted all other forms of ER Diagram files from repository; redid the relational
          structure form; added the create table form;
+
+Oct 3rd: made changes to the create table form, added the drop table commands and added some attributes to the user table
+         also need to figure out why tables are not adding properly and why;
