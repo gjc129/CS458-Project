@@ -1,6 +1,6 @@
 Create Table Form
 ----------------------------------------------------
-
+--1
 CREATE TABLE Person
 (PERSONID      char(6),
  firstname     varchar(14),
@@ -11,17 +11,19 @@ CREATE TABLE Person
  primary key (personid) 
 );
 
+--2
 CREATE TABLE Security_Personnel
 ( PERSONID    char(6),
   foreign key(accountid) references Person
 );
 
- 
+ --3
 CREATE TABLE User
 ( PERSONID    char(6),
   foreign key(personid) references Person
 );
  
+ --4
 CREATE TABLE Account
 ( ACCOUNTID   char(8),
   username    varchar(20),
@@ -33,24 +35,30 @@ CREATE TABLE Account
   foreign key (personid) references Person
 );
   
+--5
 CREATE TABLE Admin_Acct
 ( ACCOUNTID   char(8),
   foreign key (accountid) references Account
 );
 
+--6
 CREATE TABLE Regular_Acct
 ( ACCOUNTID   char(8),
   foreign key (accountid) references Account
 );
 
+--7
 CREATE TABLE Ticket
 ( TICKETID      char(5),
   price         int,
   due_date      date,
   date_issued   date,
+  issuedby      char(6),
+  issuedto      char(6),
   primary key (ticketid)
 );
 
+--8
 CREATE TABLE Parking_Meter
 ( METERID         char(4),
   timeremaining   time,
@@ -61,12 +69,15 @@ CREATE TABLE Parking_Meter
   primary key(meterid)
 );
 
+--9
 CREATE TABLE Schedule
 ( SCHEDULEID    char(3),
   daytowork     varchar(5),
   primary key(scheduleid)
 );
   
+  
+--10
 CREATE TABLE Security_Issues
 ( PERSONID    char(6),
   ticketid    char(5),
@@ -74,6 +85,7 @@ CREATE TABLE Security_Issues
   foreign key(ticketid) references Ticket
 );
 
+--11
 CREATE TABLE Security_Monitors
 ( PERSONID    char(6),
   meterid     char(4),
@@ -81,18 +93,29 @@ CREATE TABLE Security_Monitors
   foreign key(meterid) references Parking_Meter
 );
 
+--12
 CREATE TABLE Security_Gets
 ( PERSONID    char(6),
-  scheduleid  char(3)
+  scheduleid  char(3),
+  foreign key(personid) references Person,
+  foreign key(scheduleid) references Schedule
 );
 
+--13
 CREATE TABLE User_Pays
 ( PERSONID    char(6),
   ticketid    char(5),
-  
+  foreign key(personid) references Person,
+  foreign key(ticketid) references Ticket
+);
 
-
-
+--14
+CREATE TABLE User_Credits
+( PERSONID   char(6),
+  meterid    char(6),
+  foreign key(personid) references Person,
+  foreign key(meterid) references meter
+);
 
 
 
