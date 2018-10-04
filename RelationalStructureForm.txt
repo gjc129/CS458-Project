@@ -5,7 +5,7 @@ Person(PERSONID, firstname, lastname, phonenumber, issecurity, isuser)
 Security_Personnel(PERSONID)
 	foreign key (personid) references Person
 
-User(credit, PERSONID)
+User(credit, licenseplatenum, color PERSONID)
 	foreign key (personid) references Person
 
 Account(ACCOUNTID, username, password, personid, isregular, isadmin)
