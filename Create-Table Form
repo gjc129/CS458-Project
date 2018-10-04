@@ -153,7 +153,7 @@ CREATE TABLE User_Pays
 
 CREATE TABLE User_Credits
 ( PERSONID   char(6),
-  meterid    char(6),
+  meterid    char(4),
   foreign key(personid) references Person,
   foreign key(meterid) references Parking_Meter
 );
