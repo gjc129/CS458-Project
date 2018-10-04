@@ -25,3 +25,6 @@ Oct 2nd: added final ER Diagram for database; Deleted all other forms of ER Diag
 
 Oct 3rd: made changes to the create table form, added the drop table commands and added some attributes to the user table
          also need to figure out why tables are not adding properly and why;
+
+Oct 3rd: UPDATE: I figured out the issues with the tables not adding properly, database is created, live, and awaiting to be populated;
+                 Also fixed all the issues with the create table form and also added the other attributes;
