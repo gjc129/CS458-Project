@@ -141,7 +141,8 @@ CREATE TABLE Security_Gets
 --13
 
 
-CREATE TABLE User_Pays ( PERSONID char(6),
+CREATE TABLE User_Pays 
+( PERSONID char(6),
   ticketid    char(5),
   foreign key(personid) references Person,
   foreign key(ticketid) references Ticket
@@ -158,5 +159,17 @@ CREATE TABLE User_Credits
 );
 
 
-
-
+describe Person
+describe Security_Personnel
+describe Users
+describe Account
+describe Admin_Acct
+describe Regular_Acct
+describe Ticket
+describe Parking_Meter
+describe Schedule
+describe Security_Issues
+describe Security_Monitors
+describe Security_Gets
+describe User_Pays
+describe User_Credits
