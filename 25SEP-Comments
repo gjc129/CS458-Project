@@ -16,7 +16,11 @@ if( is in system)
     a way to bypass this, or know a difference and decipher the difference between the two.
 ========================================
 
-THINGS TO DO FOR NEXT TIME
+============================================================================
+COMPLETED
+============================================================================
+THINGS TO DO FOR NEXT TIME 
 ========================================
 - rework ER diagram to include supertype subtype class for account(user/admin)
 - continue working with relational structure form to ultimately make create table form to generate database
+============================================================================
