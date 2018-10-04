@@ -1,10 +1,10 @@
 - created the relational structure form for the database
-
+COMPLETED
 - created the create table form for the entity classes
-
+COMPLETED
 - need to add drop table statements and test in sqlplus to make sure no errors occur in creating tables
 http://users.humboldt.edu/smtuttle/f17cs325/325lab01/325sql-01-intro-to-sql.pdf
-
+COMPLETED
 - need to look into postgresql to understand queries and such for using in webpages
 
 - need to figure out how and where to host database
