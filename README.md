@@ -27,4 +27,5 @@ Oct 3rd: made changes to the create table form, added the drop table commands an
          also need to figure out why tables are not adding properly and why;
 
 Oct 3rd: UPDATE: I figured out the issues with the tables not adding properly, database is created, live, and awaiting to be populated;
-                 Also fixed all the issues with the create table form and also added the other attributes;
+                 Also fixed all the issues with the create table form and also added the other attributes; updated relational structure
+                 form with added attributes for User, also updated name to Users all across the files
