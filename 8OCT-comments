@@ -1,5 +1,12 @@
 To-Do
 =====================
 - write queries to make sure that database can work correctly 
-
-- 
+  -insert, update, changes, etc.
+  
+  -create new account
+  -pay for meter
+  -leave meter
+  -repay
+  -create ticket
+  -update ticket(paid)
+  -delete ticket(accident)
