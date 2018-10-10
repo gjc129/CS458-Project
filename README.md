@@ -32,4 +32,4 @@ Oct 3rd: UPDATE: I figured out the issues with the tables not adding properly, d
 
 Oct 4th: Created AWS account to host Database using PostgreSQL
 
-Oct 9th: added new comment file 9OCT-comments, it contains information for the website
+Oct 9th: added new comment file 9OCT-comments, it contains information for the website like what might be included in the webpages
