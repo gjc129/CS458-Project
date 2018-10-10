@@ -31,3 +31,5 @@ Oct 3rd: UPDATE: I figured out the issues with the tables not adding properly, d
                  form with added attributes for User, also updated name to Users all across the files
 
 Oct 4th: Created AWS account to host Database using PostgreSQL
+
+Oct 9th: added new comment file 9OCT-comments, it contains information for the website
