@@ -32,4 +32,6 @@ Oct 3rd: UPDATE: I figured out the issues with the tables not adding properly, d
 
 Oct 4th: Created AWS account to host Database using PostgreSQL
 
-Oct 9th: added new comment file 9OCT-comments, it contains information for the website like what might be included in the webpages
+Oct 9th: added new comment file 9OCT-comments; it contains information for the website like what might be included in the webpages;
+         still trying to figure out how AWS/PostgreSQL/sqlworkbench work to get database up and running; may need to create random person
+         generator to populate the DB for testing and example purposes
