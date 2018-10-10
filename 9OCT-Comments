@@ -1,0 +1,47 @@
+Created Finite State Machine with different pages required.
+
+little details on pages include:
+
+- logIn page
+  - give username and password 
+
+- createAccount page
+  - gives textboxes for inputting information for user
+    - first name
+    - last name
+    - license plate num
+    - vehicle color
+    
+- optionMenu page
+  - gives menu for paying meter, purchase credit, paying tickets
+  - displays map to show available or unavailable meters
+  - displays amount of credit user has
+ 
+- payMeter page
+  - gives all options needed to pay for a meter
+    - maybe a dropdown of meter names to easily allow people to pay for a specific meter
+    - give an option to scan a QR code to also easily select which meter is going to be used
+    - how much credit is being used
+    
+- payTicket page
+  - gives option to pay for ticket
+    - includes text boxes to input info for ticket id, payment option, etc
+    
+- creditPurchase
+  - gives you option to purchase credit
+  - most likely needs a link to access paypal to do transaction then go back to this page to finish transaction
+  
+- exit page
+  - exit page directs back to logIn page
+  
+  
+*Note: Pages may vary based on if log in is with a regular user account or an admin(security personnel) user.
+
+- for security personnel, the log in page will direct them to the same option page with map showing available spots and spots that
+  are not available, but it also displays the time remaining for said meters, that way they could easily reference to make sure 
+  who has a valid meter and who does not
+  
+- security also has option to issue tickets to users(how that will be handled will depend on school to school)
+
+
+  
