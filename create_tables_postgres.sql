@@ -1,19 +1,19 @@
 -- Create Table Form
 
 DROP TABLE Security_Personnel;
-DROP TABLE Users cascade constraints;
-DROP TABLE Admin_Acct cascade constraints;
-DROP TABLE Regular_Acct cascade constraints;
-DROP TABLE Ticket cascade constraints;
-DROP TABLE Parking_Meter cascade constraints;
-DROP TABLE User_Credits cascade constraints;
-DROP TABLE Schedule cascade constraints;
-DROP TABLE Security_Issues cascade constraints;
-DROP TABLE Security_Monitors cascade constraints;
-DROP TABLE Security_Gets cascade constraints;
-DROP TABLE User_Pays cascade constraints;
-DROP TABLE Person cascade constraints;
-DROP TABLE Account cascade constraints;
+DROP TABLE Users CASCADE;
+DROP TABLE Admin_Acct CASCADE;
+DROP TABLE Regular_Acct CASCADE;
+DROP TABLE Ticket CASCADE;
+DROP TABLE Parking_Meter CASCADE;
+DROP TABLE User_Credits CASCADE;
+DROP TABLE Schedule CASCADE;
+DROP TABLE Security_Issues CASCADE;
+DROP TABLE Security_Monitors CASCADE;
+DROP TABLE Security_Gets CASCADE;
+DROP TABLE User_Pays CASCADE;
+DROP TABLE Person CASCADE;
+DROP TABLE Account CASCADE;
 
 CREATE TABLE Person
 (PERSONID      char(6),
@@ -29,7 +29,7 @@ CREATE TABLE Person
 
 CREATE TABLE Security_Personnel
 ( PERSONID    char(6),
-  FOREIGN KEY(personid) references Person
+  FOREIGN KEY(personid) REFERENCES Person
 );
 
  --3
@@ -40,7 +40,7 @@ CREATE TABLE Users
   licenseplatenum  varchar(7),
   color            varchar(15),
   personid         char(6),
-  FOREIGN KEY(personid) references Person
+  FOREIGN KEY(personid) REFERENCES Person
 );
 
  --4
@@ -54,14 +54,14 @@ CREATE TABLE Account
   isregular   char(1) check(isregular IN ('y','n','Y','N')),
   isadmin     char(1) check(isadmin IN ('y','n','Y','N')),
   PRIMARY KEY(accountid),
-  FOREIGN KEY(personid) references Person
+  FOREIGN KEY(personid) REFERENCES Person
 );
 
 --5
 
 CREATE TABLE Admin_Acct
 ( ACCOUNTID   char(8),
-  FOREIGN KEY(accountid) references Account
+  FOREIGN KEY(accountid) REFERENCES Account
 );
 
 --6
@@ -69,7 +69,7 @@ CREATE TABLE Admin_Acct
 
 CREATE TABLE Regular_Acct
 ( ACCOUNTID   char(8),
-  FOREIGN KEY(accountid) references Account
+  FOREIGN KEY(accountid) REFERENCES Account
 );
 
 --7
@@ -113,8 +113,8 @@ CREATE TABLE Schedule
 CREATE TABLE Security_Issues
 ( PERSONID    char(6),
   ticketid    char(5),
-  FOREIGN KEY(personid) references Person,
-  FOREIGN KEY(ticketid) references Ticket
+  FOREIGN KEY(personid) REFERENCES Person,
+  FOREIGN KEY(ticketid) REFERENCES Ticket
 );
 
 --11
@@ -123,8 +123,8 @@ CREATE TABLE Security_Issues
 CREATE TABLE Security_Monitors
 ( PERSONID    char(6),
   meterid     char(4),
-  FOREIGN KEY(personid) references Person,
-  FOREIGN KEY(meterid) references Parking_Meter
+  FOREIGN KEY(personid) REFERENCES Person,
+  FOREIGN KEY(meterid) REFERENCES Parking_Meter
 );
 
 --12
@@ -133,8 +133,8 @@ CREATE TABLE Security_Monitors
 CREATE TABLE Security_Gets
 ( PERSONID    char(6),
   scheduleid  char(3),
-  FOREIGN KEY(personid) references Person,
-  FOREIGN KEY(scheduleid) references Schedule
+  FOREIGN KEY(personid) REFERENCES Person,
+  FOREIGN KEY(scheduleid) REFERENCES Schedule
 );
 
 
@@ -144,8 +144,8 @@ CREATE TABLE Security_Gets
 CREATE TABLE User_Pays 
 ( PERSONID char(6),
   ticketid    char(5),
-  FOREIGN KEY(personid) references Person,
-  FOREIGN KEY(ticketid) references Ticket
+  FOREIGN KEY(personid) REFERENCES Person,
+  FOREIGN KEY(ticketid) REFERENCES Ticket
 );
 
 --14
@@ -154,8 +154,8 @@ CREATE TABLE User_Pays
 CREATE TABLE User_Credits
 ( PERSONID   char(6),
   meterid    char(4),
-  FOREIGN KEY(personid) references Person,
-  FOREIGN KEY(meterid) references Parking_Meter
+  FOREIGN KEY(personid) REFERENCES Person,
+  FOREIGN KEY(meterid) REFERENCES Parking_Meter
 );
 
 
