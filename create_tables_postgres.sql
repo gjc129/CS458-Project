@@ -159,17 +159,3 @@ CREATE TABLE User_Credits
 );
 
 
-describe Person
-describe Security_Personnel
-describe Users
-describe Account
-describe Admin_Acct
-describe Regular_Acct
-describe Ticket
-describe Parking_Meter
-describe Schedule
-describe Security_Issues
-describe Security_Monitors
-describe Security_Gets
-describe User_Pays
-describe User_Credits
