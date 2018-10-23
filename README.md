@@ -33,7 +33,6 @@ Oct 3rd: UPDATE: I figured out the issues with the tables not adding properly, d
 Oct 4th: Created AWS account to host Database using PostgreSQL
 
 Oct 9th: added new comment file 9OCT-comments; it contains information for the website like what might be included in the webpages;
-         still trying to figure out how AWS/PostgreSQL/sqlworkbench work to get database up and running; may need to create random person
-         generator to populate the DB for testing and example purposes
+         still trying to figure out how AWS/PostgreSQL/sqlworkbench work to get database up and running; may need to create random                person generator to populate the DB for testing and example purposes
 
-Oct 22th: added new create table sql file written in "hopefully" correct PostgreSQL; Added SRS document;
+Oct 22th: added new create table sql file written in "hopefully" correct PostgreSQL; Added SRS document; Added meeting notes for Oct              5th; Added meeting notes for Oct 12th; Added meeting notes for Oct 19th; 
