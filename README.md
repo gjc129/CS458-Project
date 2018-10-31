@@ -37,4 +37,4 @@ Oct 9th: added new comment file 9OCT-comments; it contains information for the w
 
 Oct 22th: added new create table sql file written in "hopefully" correct PostgreSQL; Added SRS document; Added meeting notes for Oct              5th; Added meeting notes for Oct 12th; Added meeting notes for Oct 19th; 
 
-Oct 30th: Added leaflet.js, leaflet.css, leaflet.html;
+Oct 30th: Added leaflet.js, leaflet.css, leaflet.html; also included software design specification document
