@@ -1,0 +1,19 @@
+#mapid { height: 80vh; }
+
+#shelfForm { height: 20vh; }
+
+#upper
+{
+        display:inline-block;
+}
+
+#lower
+{
+        display:inline-block;
+}
+
+html, body {
+    margin: 0;
+    height: 100%;
+}
+
