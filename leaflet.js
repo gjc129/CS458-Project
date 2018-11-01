@@ -1,44 +1,534 @@
-//30OCT added meter1-6 for marker example
-
 window.onload = function(e)
 {
 
-var mymap = L.map('mapid').setView([40.875770, -124.078639], 17);
+var mymap = L.map('mapid').setView([40.875770, -124.078639], 18);
 
 //var zoomLevel = 13;
 //var xCoordinate = 40.875770;
-//var yCoordinate = -124.078639;
+//var yCoordinate = -124.078639; 
+
+/*
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={pk.eyJ1IjoiYmFrZWRub3RmcmllZDEyNSIsImEiOiJjam5nZTN4cjEwMjdlM3FucjRxcW1teXRuIn0.yZ53U04Y-hb31wLfEpC5jg}', 
+{
+	id: 'mapbox.streets'
+}).addTo(mymap);
+
+*/
+
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
+		maxZoom: 20,
+		attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
+			'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
+			'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
+		id: 'mapbox.streets'
+	}).addTo(mymap);
+	
+//----------------------------------------------------------------------------	
+//Parking Meter location codes:
+//
+// 0: North Campus 		0001-0000
+// 1: Library			1001-1000
+// 2: Center Campus		2001-2000
+// 3: East Campus		3001-3041
+// 4: South Campus		4001-4000
+
+//----------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------
+// Center Campus
+//----------------------------------------------------------------------------
+
+var meter2001 = L.marker([40.874829, -124.079730]).addTo(mymap)
+	.bindPopup('Meter ID: ');
+
+var meter2002 = L.marker([40.874782, -124.079734]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2003 = L.marker([40.874647, -124.079733]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2004 = L.marker([40.874605, -124.079731]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2005 = L.marker([40.874775, -124.079616]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2006 = L.marker([40.874730, -124.079617]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2007 = L.marker([40.874316, -124.079620]).addTo(mymap)
+	.bindPopup('Meter ID: ');
+
+var meter2008 = L.marker([40.874227, -124.079514]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2009 = L.marker([40.874226, -124.079448]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2010 = L.marker([40.874224, -124.079370]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2011 = L.marker([40.874225, -124.079295]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2012 = L.marker([40.874227, -124.079223]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2013 = L.marker([40.875433, -124.078647]).addTo(mymap)
+	.bindPopup('Meter ID: ');
+
+var meter2014 = L.marker([40.875372, -124.078644]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2015 = L.marker([40.875305, -124.078646]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2016 = L.marker([40.875168, -124.078646]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2017 = L.marker([40.875099, -124.078646]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2018 = L.marker([40.875046, -124.078654]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2019 = L.marker([40.874980, -124.078648]).addTo(mymap)
+	.bindPopup('Meter ID: ');
+
+var meter2020 = L.marker([40.874920, -124.078661]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2021 = L.marker([40.874857, -124.078651]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2022 = L.marker([40.874793, -124.078650]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2023 = L.marker([40.875629, -124.078525]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2024 = L.marker([40.875571, -124.078524]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2025 = L.marker([40.875502, -124.078526]).addTo(mymap)
+	.bindPopup('Meter ID: ');
+
+var meter2026 = L.marker([40.875336, -124.078527]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2027 = L.marker([40.875280, -124.078527]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2028 = L.marker([40.875090, -124.078530]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2029 = L.marker([40.875037, -124.078527]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2030 = L.marker([40.874876, -124.078531]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2031 = L.marker([40.874829, -124.078528]).addTo(mymap)
+	.bindPopup('Meter ID: ');
+
+var meter2032 = L.marker([40.874769, -124.078529]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2033 = L.marker([40.874717, -124.078531]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2034 = L.marker([40.874650, -124.078534]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2035 = L.marker([40.874583, -124.078529]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2036 = L.marker([40.874528, -124.078532]).addTo(mymap)
+	.bindPopup('Meter ID: ');	
+	
+var meter2037 = L.marker([40.874420, -124.078530]).addTo(mymap)
+	.bindPopup('Meter ID: ');
+
+var meter2038 = L.marker([40.874366, -124.078530]).addTo(mymap)
+	.bindPopup('Meter ID: ');
+//----------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------
+// East Campus
+//----------------------------------------------------------------------------
+
+var meter3001 = L.marker([40.874478, -124.075829]).addTo(mymap)
+	.bindPopup('Meter ID: 3001');
+
+var meter3002 = L.marker([40.874420, -124.075845]).addTo(mymap)
+	.bindPopup('Meter ID: 3002');
+
+var meter3003 = L.marker([40.874379, -124.075862]).addTo(mymap)
+	.bindPopup('Meter ID: 3003');
+
+var meter3004 = L.marker([40.874334, -124.075882]).addTo(mymap)
+	.bindPopup('Meter ID: 3004');
+
+var meter3005 = L.marker([40.874207, -124.075931]).addTo(mymap)
+	.bindPopup('Meter ID: 3005');
+
+var meter3006 = L.marker([40.874158, -124.075947]).addTo(mymap)
+	.bindPopup('Meter ID: 3006');
+	
+var meter3007 = L.marker([40.874113, -124.075958]).addTo(mymap)
+	.bindPopup('Meter ID: 3007');
+
+var meter3008 = L.marker([40.874069, -124.075972]).addTo(mymap)
+	.bindPopup('Meter ID: 3008');
+
+var meter3009 = L.marker([40.874021, -124.075986]).addTo(mymap)
+	.bindPopup('Meter ID: 3009');
+
+var meter3010 = L.marker([40.873965, -124.076025]).addTo(mymap)
+	.bindPopup('Meter ID: 3010');
+	
+var meter3011 = L.marker([40.873868, -124.076049]).addTo(mymap)
+	.bindPopup('Meter ID: 3011');
+	
+var meter3012 = L.marker([40.873826, -124.076068]).addTo(mymap)
+	.bindPopup('Meter ID: 3012');
+
+var meter3013 = L.marker([40.873763, -124.076100]).addTo(mymap)
+	.bindPopup('Meter ID: 3013');
+	
+//----------------------------------------------------------------------------
+
+var meter3014 = L.marker([40.874257, -124.075801]).addTo(mymap)
+	.bindPopup('Meter ID: 3014');
+
+var meter3015 = L.marker([40.874221, -124.075816]).addTo(mymap)
+	.bindPopup('Meter ID: 3015');
+
+var meter3016 = L.marker([40.874183, -124.075839]).addTo(mymap)
+	.bindPopup('Meter ID: 3016');
+
+var meter3017 = L.marker([40.874143, -124.075863]).addTo(mymap)
+	.bindPopup('Meter ID: 3017');
+
+var meter3018 = L.marker([40.874105, -124.075874]).addTo(mymap)
+	.bindPopup('Meter ID: 3018');
+
+var meter3019 = L.marker([40.874028, -124.075884]).addTo(mymap)
+	.bindPopup('Meter ID: 3019');
+
+var meter3020 = L.marker([40.873965, -124.075900]).addTo(mymap)
+	.bindPopup('Meter ID: 3020');
+
+var meter3021 = L.marker([40.873921, -124.075920]).addTo(mymap)
+	.bindPopup('Meter ID: 3021');
+
+var meter3022 = L.marker([40.873866, -124.075941]).addTo(mymap)
+	.bindPopup('Meter ID: 3022');
+
+var meter3023 = L.marker([40.873811, -124.075960]).addTo(mymap)
+	.bindPopup('Meter ID: 3023');
+
+var meter3024 = L.marker([40.873756, -124.075983]).addTo(mymap)
+	.bindPopup('Meter ID: 3024');
+
+var meter3025 = L.marker([40.873699, -124.076005]).addTo(mymap)
+	.bindPopup('Meter ID: 3025');
+
+//----------------------------------------------------------------------------
+	
+var meter3026 = L.marker([40.873455, -124.076213]).addTo(mymap)
+	.bindPopup('Meter ID: 3026');
+
+var meter3027 = L.marker([40.873403, -124.076236]).addTo(mymap)
+	.bindPopup('Meter ID: 3027');
+
+var meter3028 = L.marker([40.873349, -124.076252]).addTo(mymap)
+	.bindPopup('Meter ID: 3028');
+
+var meter3029 = L.marker([40.873296, -124.076274]).addTo(mymap)
+	.bindPopup('Meter ID: 3029');
+
+var meter3030 = L.marker([40.873244, -124.076295]).addTo(mymap)
+	.bindPopup('Meter ID: 3030');
+
+var meter3031 = L.marker([40.873179, -124.076319]).addTo(mymap)
+	.bindPopup('Meter ID: 3031');
+
+var meter3032 = L.marker([40.873122, -124.076341]).addTo(mymap)
+	.bindPopup('Meter ID: 3032');
+
+var meter3033 = L.marker([40.873065, -124.076362]).addTo(mymap)
+	.bindPopup('Meter ID: 3033');
+
+var meter3034 = L.marker([40.873011, -124.076384]).addTo(mymap)
+	.bindPopup('Meter ID: 3034');
+
+var meter3035 = L.marker([40.872955, -124.076400]).addTo(mymap)
+	.bindPopup('Meter ID: 3035');
+	
+var meter3036 = L.marker([40.872741, -124.076480]).addTo(mymap)
+	.bindPopup('Meter ID: 3036');
+	
+var meter3037 = L.marker([40.872689, -124.076504]).addTo(mymap)
+	.bindPopup('Meter ID: 3037');
+
+var meter3038 = L.marker([40.872632, -124.076519]).addTo(mymap)
+	.bindPopup('Meter ID: 3038');
+
+var meter3039 = L.marker([40.872573, -124.076544]).addTo(mymap)
+	.bindPopup('Meter ID: 3039');
+
+var meter3040 = L.marker([40.872515, -124.076564]).addTo(mymap)
+	.bindPopup('Meter ID: 3040');
+
+var meter3041 = L.marker([40.872465, -124.076586]).addTo(mymap)
+	.bindPopup('Meter ID: 3041');
+
+//----------------------------------------------------------------------------	
+	
+//----------------------------------------------------------------------------
+// South Campus
+//----------------------------------------------------------------------------
+
+var meter4001 = L.marker([40.871327, -124.077364]).addTo(mymap)
+	.bindPopup('Meter ID: 4001');
+
+var meter4002 = L.marker([40.871343, -124.077433]).addTo(mymap)
+	.bindPopup('Meter ID: 4002');
+
+var meter4003 = L.marker([40.871360, -124.077504]).addTo(mymap)
+	.bindPopup('Meter ID: 4003');
+	
+var meter4004 = L.marker([40.871374, -124.077572]).addTo(mymap)
+	.bindPopup('Meter ID: 4004');
+
+var meter4005 = L.marker([40.871388, -124.077638]).addTo(mymap)
+	.bindPopup('Meter ID: 4005');
+
+var meter4006 = L.marker([40.871403, -124.077713]).addTo(mymap)
+	.bindPopup('Meter ID: 4006');
+
+var meter4007 = L.marker([40.871414, -124.077768]).addTo(mymap)
+	.bindPopup('Meter ID: 4007');
+	
+var meter4008 = L.marker([40.871434, -124.077830]).addTo(mymap)
+	.bindPopup('Meter ID: 4008');
+
+var meter4009 = L.marker([40.871502, -124.078159]).addTo(mymap)
+	.bindPopup('Meter ID: 4009');
+
+var meter4010 = L.marker([40.871516, -124.078236]).addTo(mymap)
+	.bindPopup('Meter ID: 4010');
+
+var meter4011 = L.marker([40.871531, -124.078305]).addTo(mymap)
+	.bindPopup('Meter ID: 4011');
+
+var meter4012 = L.marker([40.871548, -124.078367]).addTo(mymap)
+	.bindPopup('Meter ID: 4012');
+
+var meter4013 = L.marker([40.871582, -124.078534]).addTo(mymap)
+	.bindPopup('Meter ID: 4013');
+
+var meter4014 = L.marker([40.871596, -124.078599]).addTo(mymap)
+	.bindPopup('Meter ID: 4014');
+
+var meter4015 = L.marker([40.871610, -124.078666]).addTo(mymap)
+	.bindPopup('Meter ID: 4015');
+
+var meter4016 = L.marker([40.871625, -124.078742]).addTo(mymap)
+	.bindPopup('Meter ID: 4016');
+
+var meter4017 = L.marker([40.871642, -124.078807]).addTo(mymap)
+	.bindPopup('Meter ID: 4017');
+
+var meter4018 = L.marker([40.871654, -124.078872]).addTo(mymap)
+	.bindPopup('Meter ID: 4018');
+
+var meter4019 = L.marker([40.871765, -124.079353]).addTo(mymap)
+	.bindPopup('Meter ID: 4019');
+	
+var meter4020 = L.marker([40.871778, -124.079429]).addTo(mymap)
+	.bindPopup('Meter ID: 4020');
+
+var meter4021 = L.marker([40.871778, -124.079429]).addTo(mymap)
+	.bindPopup('Meter ID: 4021');
+
+var meter4022 = L.marker([40.871811, -124.079583]).addTo(mymap)
+	.bindPopup('Meter ID: 4022');
+
+var meter4023 = L.marker([40.871831, -124.079656]).addTo(mymap)
+	.bindPopup('Meter ID: 4023');
+	
+var meter4024 = L.marker([40.871844, -124.079730]).addTo(mymap)
+	.bindPopup('Meter ID: 4024');
+
+var meter4025 = L.marker([40.871862, -124.079810]).addTo(mymap)
+	.bindPopup('Meter ID: 4025');
+
+var meter4026 = L.marker([40.871876, -124.079877]).addTo(mymap)
+	.bindPopup('Meter ID: 4026');
+	
+var meter4027 = L.marker([40.871889, -124.079931]).addTo(mymap)
+	.bindPopup('Meter ID: 4027');
+
+var meter4028 = L.marker([40.871914, -124.080047]).addTo(mymap)
+	.bindPopup('Meter ID: 4028');
+
+var meter4029 = L.marker([40.871929, -124.080111]).addTo(mymap)
+	.bindPopup('Meter ID: 4029');
+
+var meter4030 = L.marker([40.871943, -124.080176]).addTo(mymap)
+	.bindPopup('Meter ID: 4030');
+	
+var meter4031 = L.marker([40.871957, -124.080248]).addTo(mymap)
+	.bindPopup('Meter ID: 4031');
+
+var meter4032 = L.marker([40.871973, -124.080317]).addTo(mymap)
+	.bindPopup('Meter ID: 4032');
+
+var meter4033 = L.marker([40.871989, -124.080396]).addTo(mymap)
+	.bindPopup('Meter ID: 4033');
+
+var meter4034 = L.marker([40.872004, -124.080465]).addTo(mymap)
+	.bindPopup('Meter ID: 4034');
+	
+var meter4035 = L.marker([40.872018, -124.080536]).addTo(mymap)
+	.bindPopup('Meter ID: 4035');
+
+var meter4036 = L.marker([40.872077, -124.080808]).addTo(mymap)
+	.bindPopup('Meter ID: 4036');
+
+var meter4037 = L.marker([40.872094, -124.080879]).addTo(mymap)
+	.bindPopup('Meter ID: 4037');
+
+var meter4038 = L.marker([40.872112, -124.080948]).addTo(mymap)
+	.bindPopup('Meter ID: 4038');
+	
+var meter4039 = L.marker([40.872147, -124.081083]).addTo(mymap)
+	.bindPopup('Meter ID: 4039');
+
+var meter4040 = L.marker([40.872166, -124.081154]).addTo(mymap)
+	.bindPopup('Meter ID: 4040');
+
+var meter4041 = L.marker([40.872184, -124.081220]).addTo(mymap)
+	.bindPopup('Meter ID: 4041');
+
+var meter4042 = L.marker([40.872088, -124.081257]).addTo(mymap)
+	.bindPopup('Meter ID: 4042');
+	
+var meter4043 = L.marker([40.872071, -124.081187]).addTo(mymap)
+	.bindPopup('Meter ID: 4043');
+
+var meter4044 = L.marker([40.872057, -124.081112]).addTo(mymap)
+	.bindPopup('Meter ID: 4044');
+
+var meter4045 = L.marker([40.871911, -124.080436]).addTo(mymap)
+	.bindPopup('Meter ID: 4045');
+
+var meter4046 = L.marker([40.871893, -124.080362]).addTo(mymap)
+	.bindPopup('Meter ID: 4046');
+	
+var meter4047 = L.marker([40.871880, -124.080293]).addTo(mymap)
+	.bindPopup('Meter ID: 4047');
+
+var meter4048 = L.marker([40.871808, -124.079973]).addTo(mymap)
+	.bindPopup('Meter ID: 4048');
+
+var meter4049 = L.marker([40.871792, -124.079895]).addTo(mymap)
+	.bindPopup('Meter ID: 4049');
+
+var meter4050 = L.marker([40.871776, -124.079828]).addTo(mymap)
+	.bindPopup('Meter ID: 4050');
+	
+var meter4051 = L.marker([40.871760, -124.079755]).addTo(mymap)
+	.bindPopup('Meter ID: 4051');
+
+var meter4052 = L.marker([40.871745, -124.079686]).addTo(mymap)
+	.bindPopup('Meter ID: 4052');
+
+var meter4053 = L.marker([40.871731, -124.079615]).addTo(mymap)
+	.bindPopup('Meter ID: 4053');
+
+var meter4054 = L.marker([40.871713, -124.080134]).addTo(mymap)
+	.bindPopup('Meter ID: 4054');
+	
+var meter4055 = L.marker([40.871658, -124.080154]).addTo(mymap)
+	.bindPopup('Meter ID: 4055');
+
+var meter4056 = L.marker([40.871607, -124.080175]).addTo(mymap)
+	.bindPopup('Meter ID: 4056');
+	
+var meter4057 = L.marker([40.871542, -124.080200]).addTo(mymap)
+	.bindPopup('Meter ID: 4057');	
+	
+var meter4058 = L.marker([40.871491, -124.080218]).addTo(mymap)
+	.bindPopup('Meter ID: 4058');	
+	
+var meter4059 = L.marker([40.871431, -124.080241]).addTo(mymap)
+	.bindPopup('Meter ID: 4059');	
+	
+var meter4060 = L.marker([40.871373, -124.080263]).addTo(mymap)
+	.bindPopup('Meter ID: 4060');
+
+var meter4061 = L.marker([40.871308, -124.080286]).addTo(mymap)
+	.bindPopup('Meter ID: 4061');
+	
+var meter4062 = L.marker([40.871257, -124.080307]).addTo(mymap)
+	.bindPopup('Meter ID: 4062');	
+	
+var meter4063 = L.marker([40.871205, -124.080326]).addTo(mymap)
+	.bindPopup('Meter ID: 4063');	
+	
+var meter4064 = L.marker([40.871090, -124.080214]).addTo(mymap)
+	.bindPopup('Meter ID: 4064');		
+	
+var meter4065 = L.marker([40.871076, -124.080141]).addTo(mymap)
+	.bindPopup('Meter ID: 4065');
+
+var meter4066 = L.marker([40.871060, -124.080069]).addTo(mymap)
+	.bindPopup('Meter ID: 4066');
+	
+var meter4067 = L.marker([40.870979, -124.079694]).addTo(mymap)
+	.bindPopup('Meter ID: 4067');	
+	
+var meter4068 = L.marker([40.870966, -124.079627]).addTo(mymap)
+	.bindPopup('Meter ID: 4068');	
+	
+var meter4069 = L.marker([40.870989, -124.079391]).addTo(mymap)
+	.bindPopup('Meter ID: 4069');		
+	
+var meter4070 = L.marker([40.871034, -124.079376]).addTo(mymap)
+	.bindPopup('Meter ID: 4070');		
+	
+var meter4071 = L.marker([40.871082, -124.079356]).addTo(mymap)
+	.bindPopup('Meter ID: 4071');		
+	
+var meter4072 = L.marker([40.871130, -124.079338]).addTo(mymap)
+	.bindPopup('Meter ID: 4072');		
+	
+var meter4073 = L.marker([40.871185, -124.079321]).addTo(mymap)
+	.bindPopup('Meter ID: 4073');		
+	
+var meter4074 = L.marker([40.871232, -124.079299]).addTo(mymap)
+	.bindPopup('Meter ID: 4074');		
+	
+var meter4075 = L.marker([40.871382, -124.079244]).addTo(mymap)
+	.bindPopup('Meter ID: 4075');		
+	
+var meter4076 = L.marker([40.871441, -124.079223]).addTo(mymap)
+	.bindPopup('Meter ID: 4076');		
+	
+var meter4077 = L.marker([40.871491, -124.079204]).addTo(mymap)
+	.bindPopup('Meter ID: 4077');		
+	
+var meter4078 = L.marker([40.871541, -124.079186]).addTo(mymap)
+	.bindPopup('Meter ID: 4078');		
+	
+//----------------------------------------------------------------------------
 
 
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2$
-                maxZoom: 18,
-                attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
-                        '<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
-                        'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
-                id: 'mapbox.streets'
-        }).addTo(mymap);
+	
+//var meter = L.marker([]).addTo(mymap);
 
-var meter1 = L.marker([40.874447, -124.075873]).addTo(mymap)
-        .bindPopup('Meter ID: 0001')
-        .togglePopup();
 
-var meter2 = L.marker([40.874346, -124.075872]).addTo(mymap)
-        .bindPopup('Meter ID: 0002')
-        .togglePopup();
-
-var meter3 = L.marker([40.874320, -124.075883]).addTo(mymap)
-        .bindPopup('Meter ID: 0003')
-        .togglePopup();
-
-var meter4 = L.marker([40.874257, -124.075908]).addTo(mymap)
-        .bindPopup('Meter ID: 0004')
-        .togglePopup();
-
-var meter5 = L.marker([40.874198, -124.075934]).addTo(mymap)
-        .bindPopup('Meter ID: 0005')
-        .togglePopup();
-
-var meter6 = L.marker([40.874161, -124.075946]).addTo(mymap)
-        .bindPopup('Meter ID: 0006')
-        .togglePopup();
 }
