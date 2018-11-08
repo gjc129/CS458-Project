@@ -40,3 +40,5 @@ Oct 22th: added new create table sql file written in "hopefully" correct Postgre
 Oct 30th: Added leaflet.js, leaflet.css, leaflet.html; also included software design specification document
 
 Oct 31st: Updated leaflet.js file to include all the markers for several zones on the map
+
+Nov 7th: updated Leaflet.js file to include markers and event clicks for each meter; added a .cpp file that is being used to populate the tables.
