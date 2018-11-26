@@ -562,949 +562,947 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 // when clicked on.
 //----------------------------------------------------------------------------
 
-    
    meter2001.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2001";
-      console.log("2001");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2001"
    });
 
    meter2002.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2002";
-      console.log("2002");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2002"
    });
 
    meter2003.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2003";
-      console.log("2003");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2003"
    });
 
    meter2004.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2004";
-      console.log("2004");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2004"
    });
 
    meter2005.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2005";
-      console.log("2005");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2005"
    });
 
    meter2006.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2006";
-      console.log("2006");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2006"
    });
 
    meter2007.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2007";
-      console.log("2007");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2007"
    });
 
    meter2008.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2008";
-      console.log("2008");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2008"
    });
 
    meter2009.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2009";
-      console.log("2009");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2009"
    });
 
    meter2010.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2010";
-      console.log("2010");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2010"
    });
 
    meter2011.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2011";
-      console.log("2011");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2011"
    });
 
    meter2012.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2012";
-      console.log("2012");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2012"
    });
 
    meter2013.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2013";
-      console.log("2013");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2013"
    });
 
    meter2014.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2014";
-      console.log("2014");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2014"
    });
 
    meter2015.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2015";
-      console.log("2015");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2015"
    });
 
    meter2016.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2016";
-      console.log("2016");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2016"
    });
 
    meter2017.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2017";
-      console.log("2017");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2017"
    });
 
    meter2018.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2018";
-      console.log("2018");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2018"
    });
 
    meter2019.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2019";
-      console.log("2019");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2019"
    });
 
    meter2020.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2020";
-      console.log("2020");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2020"
    });
 
    meter2021.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2021";
-      console.log("2021");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2021"
    });
 
    meter2022.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2022";
-      console.log("2022");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2022"
    });
 
    meter2023.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2023";
-      console.log("2023");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2023"
    });
 
    meter2024.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2024";
-      console.log("2024");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2024"
    });
 
    meter2025.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2025";
-      console.log("2025");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2025"
    });
 
    meter2026.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2026";
-      console.log("2026");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2026"
    });
 
    meter2027.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2027";
-      console.log("2027");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2027"
    });
 
    meter2028.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2028";
-      console.log("2028");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2028"
    });
 
    meter2029.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2029";
-      console.log("2029");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2029"
    });
 
    meter2030.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2030";
-      console.log("2030");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2030"
    });
 
    meter2031.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2031";
-      console.log("2031");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2031"
    });
 
    meter2032.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2032";
-      console.log("2032");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2032"
    });
 
    meter2033.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2033";
-      console.log("2033");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2033"
    });
 
    meter2034.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2034";
-      console.log("2034");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2034"
    });
 
    meter2035.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2035";
-      console.log("2035");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2035"
    });
 
    meter2036.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2036";
-      console.log("2036");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2036"
    });
 
    meter2037.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2037";
-      console.log("2037");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2037"
    });
 
    meter2038.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "2038";
-      console.log("2038");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "2038"
    });
 
    meter3001.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3001";
-      console.log("3001");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3001"
    });
 
    meter3002.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3002";
-      console.log("3002");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3002"
    });
 
    meter3003.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3003";
-      console.log("3003");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3003"
    });
 
    meter3004.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3004";
-      console.log("3004");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3004"
    });
 
    meter3005.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3005";
-      console.log("3005");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3005"
    });
 
    meter3006.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3006";
-      console.log("3006");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3006"
    });
 
    meter3007.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3007";
-      console.log("3007");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3007"
    });
 
    meter3008.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3008";
-      console.log("3008");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3008"
    });
 
    meter3009.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3009";
-      console.log("3009");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3009"
    });
 
    meter3010.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3010";
-      console.log("3010");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3010"
    });
 
    meter3011.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3011";
-      console.log("3011");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3011"
    });
 
    meter3012.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3012";
-      console.log("3012");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3012"
    });
 
    meter3013.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3013";
-      console.log("3013");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3013"
    });
 
    meter3014.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3014";
-      console.log("3014");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3014"
    });
 
    meter3015.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3015";
-      console.log("3015");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3015"
    });
 
    meter3016.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3016";
-      console.log("3016");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3016"
    });
 
    meter3017.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3017";
-      console.log("3017");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3017"
    });
 
    meter3018.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3018";
-      console.log("3018");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3018"
    });
 
    meter3019.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3019";
-      console.log("3019");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3019"
    });
 
    meter3020.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3020";
-      console.log("3020");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3020"
    });
 
    meter3021.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3021";
-      console.log("3021");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3021"
    });
 
    meter3022.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3022";
-      console.log("3022");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3022"
    });
 
    meter3023.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3023";
-      console.log("3023");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3023"
    });
 
    meter3024.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3024";
-      console.log("3024");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3024"
    });
 
    meter3025.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3025";
-      console.log("3025");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3025"
    });
 
    meter3026.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3026";
-      console.log("3026");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3026"
    });
 
    meter3027.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3027";
-      console.log("3027");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3027"
    });
 
    meter3028.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3028";
-      console.log("3028");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3028"
    });
 
    meter3029.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3029";
-      console.log("3029");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3029"
    });
 
    meter3030.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3030";
-      console.log("3030");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3030"
    });
 
    meter3031.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3031";
-      console.log("3031");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3031"
    });
 
    meter3032.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3032";
-      console.log("3032");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3032"
    });
 
    meter3033.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3033";
-      console.log("3033");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3033"
    });
 
    meter3034.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3034";
-      console.log("3034");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3034"
    });
 
    meter3035.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3035";
-      console.log("3035");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3035"
    });
 
    meter3036.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3036";
-      console.log("3036");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3036"
    });
 
    meter3037.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3037";
-      console.log("3037");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3037"
    });
 
    meter3038.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3038";
-      console.log("3038");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3038"
    });
 
    meter3039.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3039";
-      console.log("3039");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3039"
    });
 
    meter3040.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3040";
-      console.log("3040");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3040"
    });
 
    meter3041.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "3041";
-      console.log("3041");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "3041"
    });
 
    meter4001.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4001";
-      console.log("4001");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4001"
    });
 
    meter4002.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4002";
-      console.log("4002");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4002"
    });
 
    meter4003.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4003";
-      console.log("4003");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4003"
    });
 
    meter4004.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4004";
-      console.log("4004");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4004"
    });
 
    meter4005.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4005";
-      console.log("4005");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4005"
    });
 
    meter4006.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4006";
-      console.log("4006");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4006"
    });
 
    meter4007.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4007";
-      console.log("4007");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4007"
    });
 
    meter4008.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4008";
-      console.log("4008");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4008"
    });
 
    meter4009.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4009";
-      console.log("4009");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4009"
    });
 
    meter4010.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4010";
-      console.log("4010");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4010"
    });
 
    meter4011.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4011";
-      console.log("4011");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4011"
    });
 
    meter4012.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4012";
-      console.log("4012");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4012"
    });
 
    meter4013.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4013";
-      console.log("4013");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4013"
    });
 
    meter4014.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4014";
-      console.log("4014");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4014"
    });
 
    meter4015.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4015";
-      console.log("4015");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4015"
    });
 
    meter4016.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4016";
-      console.log("4016");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4016"
    });
 
    meter4017.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4017";
-      console.log("4017");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4017"
    });
 
    meter4018.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4018";
-      console.log("4018");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4018"
    });
 
    meter4019.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4019";
-      console.log("4019");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4019"
    });
 
    meter4020.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4020";
-      console.log("4020");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4020"
    });
 
    meter4021.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4021";
-      console.log("4021");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4021"
    });
 
    meter4022.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4022";
-      console.log("4022");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4022"
    });
 
    meter4023.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4023";
-      console.log("4023");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4023"
    });
 
    meter4024.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4024";
-      console.log("4024");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4024"
    });
 
    meter4025.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4025";
-      console.log("4025");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4025"
    });
 
    meter4026.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4026";
-      console.log("4026");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4026"
    });
 
    meter4027.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4027";
-      console.log("4027");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4027"
    });
 
    meter4028.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4028";
-      console.log("4028");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4028"
    });
 
    meter4029.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4029";
-      console.log("4029");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4029"
    });
 
    meter4030.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4030";
-      console.log("4030");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4030"
    });
 
    meter4031.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4031";
-      console.log("4031");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4031"
    });
 
    meter4032.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4032";
-      console.log("4032");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4032"
    });
 
    meter4033.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4033";
-      console.log("4033");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4033"
    });
 
    meter4034.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4034";
-      console.log("4034");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4034"
    });
 
    meter4035.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4035";
-      console.log("4035");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4035"
    });
 
    meter4036.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4036";
-      console.log("4036");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4036"
    });
 
    meter4037.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4037";
-      console.log("4037");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4037"
    });
 
    meter4038.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4038";
-      console.log("4038");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4038"
    });
 
    meter4039.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4039";
-      console.log("4039");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4039"
    });
 
    meter4040.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4040";
-      console.log("4040");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4040"
    });
 
    meter4041.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4041";
-      console.log("4041");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4041"
    });
 
    meter4042.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4042";
-      console.log("4042");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4042"
    });
 
    meter4043.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4043";
-      console.log("4043");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4043"
    });
 
    meter4044.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4044";
-      console.log("4044");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4044"
    });
 
    meter4045.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4045";
-      console.log("4045");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4045"
    });
 
    meter4046.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4046";
-      console.log("4046");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4046"
    });
 
    meter4047.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4047";
-      console.log("4047");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4047"
    });
 
    meter4048.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4048";
-      console.log("4048");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4048"
    });
 
    meter4049.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4049";
-      console.log("4049");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4049"
    });
 
    meter4050.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4050";
-      console.log("4050");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4050"
    });
 
    meter4051.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4051";
-      console.log("4051");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4051"
    });
 
    meter4052.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4052";
-      console.log("4052");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4052"
    });
 
    meter4053.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4053";
-      console.log("4053");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4053"
    });
 
    meter4054.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4054";
-      console.log("4054");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4054"
    });
 
    meter4055.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4055";
-      console.log("4055");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4055"
    });
 
    meter4056.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4056";
-      console.log("4056");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4056"
    });
 
    meter4057.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4057";
-      console.log("4057");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4057"
    });
 
    meter4058.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4058";
-      console.log("4058");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4058"
    });
 
    meter4059.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4059";
-      console.log("4059");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4059"
    });
 
    meter4060.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4060";
-      console.log("4060");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4060"
    });
 
    meter4061.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4061";
-      console.log("4061");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4061"
    });
 
    meter4062.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4062";
-      console.log("4062");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4062"
    });
 
    meter4063.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4063";
-      console.log("4063");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4063"
    });
 
    meter4064.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4064";
-      console.log("4064");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4064"
    });
 
    meter4065.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4065";
-      console.log("4065");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4065"
    });
 
    meter4066.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4066";
-      console.log("4066");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4066"
    });
 
    meter4067.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4067";
-      console.log("4067");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4067"
    });
 
    meter4068.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4068";
-      console.log("4068");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4068"
    });
 
    meter4069.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4069";
-      console.log("4069");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4069"
    });
 
    meter4070.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4070";
-      console.log("4070");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4070"
    });
 
    meter4071.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4071";
-      console.log("4071");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4071"
    });
 
    meter4072.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4072";
-      console.log("4072");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4072"
    });
 
    meter4073.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4073";
-      console.log("4073");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4073"
    });
 
    meter4074.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4074";
-      console.log("4074");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4074"
    });
 
    meter4075.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4075";
-      console.log("4075");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4075"
    });
 
    meter4076.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4076";
-      console.log("4076");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4076"
    });
 
    meter4077.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4077";
-      console.log("4077");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4077"
    });
 
    meter4078.on("click", function(event){
       var clickedMarker = event.layer;
-      var textbox = "4078";
-      console.log("4078");
+      var textbox = document.getElementById("meterid");
+      textbox.value = "4078"
    });
-
 
 //----------------------------------------------------------------------------
 // End Click Events for Meters
