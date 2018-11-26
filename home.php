@@ -85,7 +85,7 @@
 			$_SESSION['nextStage'] = "option";
 			
 		}
-		elseif($_SESSION['nextStage'] = "option" and isset($_POST['Credit Meter']))
+		elseif($_SESSION['nextStage'] == "option" and isset($_POST['Credit Meter']))
 		{
 			requestMeter();
 			$_SESSION['nextStage'] = "option";
