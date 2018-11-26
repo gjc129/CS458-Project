@@ -44,3 +44,5 @@ Oct 31st: Updated leaflet.js file to include all the markers for several zones o
 Nov 7th: updated Leaflet.js file to include markers and event clicks for each meter; added a .cpp file that is being used to populate the tables.
 
 Nov 15th: added pages: home.php, confirmation_page.php, options_menu.php, request_meter.php, request_signup.php, request_username.php; 
+
+Nov 25th: redid the pages: home.php, confirmationPage.php, optionsMenu.php, requestMeter.php, requestSignup.php, requestUsername.php; to fit coding standards, also added query stuff for requestSignup.php. need to work on update requests to tables and continue working on populating the tables and testing
