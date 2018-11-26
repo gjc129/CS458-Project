@@ -15,7 +15,7 @@
             <div class="submit">
                 <input type="submit" value="Login" name="Login" />
         
-				<input type="submit" value="Sign Up" name="Sign Up"/>
+				<input type="submit" value="Sign Up" name="SignUp"/>
             </div>
 	</fieldset>
         </form>

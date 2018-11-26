@@ -7,7 +7,7 @@
 		
 		<fieldset>
 		<h2> Thank You for Creating An Account, Please Login to continue! </h2>
-		<input type="submit" name="Login" value="Login" />
+		<input type="submit" name="Logon" value="Logon" />
 		
 <?php
 	

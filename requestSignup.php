@@ -55,6 +55,7 @@ function requestSignup()
 							//echo '<script type="text/javascript"> alert("Sign Up Button Clicked") </script>';
 							//variables
 							$username = $_POST['username'];
+							$_SESSION['username'] = "the";
 							$password = $_POST['password'];
 							$cpassword = $_POST['cpassword'];
 							$firstName = $_POST['firstName'];
@@ -69,7 +70,7 @@ function requestSignup()
 							$ociUsername = $_SESSION['ociUsername'];
 							$ociPassword = $_SESSION['ociPassword'];
 							
-							$conn = oci_connect($ociUsername, $ociPassword);
+							$conn = hsu_conn($ociUsername, $ociPassword);
 
 							if($password==$cpassword)
 							{	

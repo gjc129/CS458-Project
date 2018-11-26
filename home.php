@@ -37,6 +37,7 @@
     <?php
 		require_once("requestUsername.php");
 		require_once("requestMeter.php");
+		require_once("requestMeter2.php");
 		require_once("requestSignup.php");
 		require_once("confirmationPage.php");
 		require_once("hsu_conn.php");
@@ -69,26 +70,42 @@
 			requestUsername();
 			$_SESSION['nextStage'] = "option";
 		}
-		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Sign Up"]))
+		elseif($_SESSION['nextStage'] == "option" and isset($_POST["SignUp"]))
 		{
 			requestSignup();
 			$_SESSION['nextStage'] = "option";
 		}
-		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Register"]))
+		elseif($_SESSION['nextStage'] == "option" and isset($_POST["submit_btn"]))
 		{
 			confirmationPage();
+			$_SESSION['nextStage'] = "option";
+		}
+		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Logon"]))
+		{
+			requestUsername();
 			$_SESSION['nextStage'] = "option";
 		}
 		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Login"]))
 		{
 			optionsMenu();
 			$_SESSION['nextStage'] = "option";
-			
 		}
-		elseif($_SESSION['nextStage'] == "option" and isset($_POST['Credit Meter']))
+		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Cancel"]))
 		{
-			requestMeter();
+			optionsMenu();
 			$_SESSION['nextStage'] = "option";
+		}
+		elseif($_SESSION['nextStage'] == "option" and isset($_POST["CreditMeter"]))
+		{
+			requestMeter2();
+			$_SESSION['nextStage'] = "option";
+		}
+		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Logout"]))
+		{
+			session_destroy();
+			session_regenerate_id(TRUE);
+			session_start();
+			requestUsername();
 		}
 		else
 		{

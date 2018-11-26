@@ -13,7 +13,7 @@ function optionsMenu()
         $conn = hsu_conn($username, $password);
         
     }
-    
+
             //$order_query_str = 'select meterid from Parking_Meter';
             //$order_query_stmt = oci_parse($conn, $order_query_str);
             //oci_execute($order_query_stmt, OCI_DEFAULT);
@@ -26,15 +26,17 @@ function optionsMenu()
             <div id ="mapid"></div>
             
             <fieldset>
-            	<input type="submit" value="Credit Meter" name="Credit Meter" />
-            	<input type="submit" value="Payment Page" name="Payment Page" />
-            	<input type="submit" value="Update Account Settings" name="Update Account Settings" />
-            	<input type="submit" value="Pay Ticket" name="Pay Ticket" />
-				<input type="submit" value="Logout" name="Logout" />
+				<div class="submit">
+					<input type="submit" value="Credit Meter" name="CreditMeter" />
+					<input type="submit" value="Payment Page" name="PaymentPage" />
+					<input type="submit" value="Update Account Settings" name="UpdateAccountSettings" />
+					<input type="submit" value="Pay Ticket" name="PayTicket" />
+					<input type="submit" value="Logout" name="Logout" />
+				</div>
             </fieldset>
 
+			</form>
 <?php
-
 	
 		
 }
