@@ -46,3 +46,5 @@ Nov 7th: updated Leaflet.js file to include markers and event clicks for each me
 Nov 15th: added pages: home.php, confirmation_page.php, options_menu.php, request_meter.php, request_signup.php, request_username.php; 
 
 Nov 25th: redid the pages: home.php, confirmationPage.php, optionsMenu.php, requestMeter.php, requestSignup.php, requestUsername.php; to fit coding standards, also added query stuff for requestSignup.php. need to work on update requests to tables and continue working on populating the tables and testing
+
+Nov 26th: added new files, confirmationUpdate.php, updateAccountSettings.php, they still have some errors but the page is able to maneuver more easily
