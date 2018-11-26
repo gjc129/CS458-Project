@@ -55,7 +55,7 @@ function requestSignup()
 							//echo '<script type="text/javascript"> alert("Sign Up Button Clicked") </script>';
 							//variables
 							$username = $_POST['username'];
-							$_SESSION['username'] = "the";
+							$_SESSION['username'] = $username;
 							$password = $_POST['password'];
 							$cpassword = $_POST['cpassword'];
 							$firstName = $_POST['firstName'];

@@ -3,14 +3,14 @@ function optionsMenu()
 {
 	if ( array_key_exists("username", $_POST))
     {
-		$username = $_SESSION['ociUsername'];
+		$ociUsername = $_SESSION['ociUsername'];
         // not doing ANYTHING with the password except
         //     trying to log in with it...
 
-		$password = $_SESSION['ociPassword'];
+		$ociPassword = $_SESSION['ociPassword'];
         // try to connect
 
-        $conn = hsu_conn($username, $password);
+        $conn = hsu_conn($ociUsername, $ociPassword);
         
     }
 

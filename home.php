@@ -42,6 +42,9 @@
 		require_once("confirmationPage.php");
 		require_once("hsu_conn.php");
         require_once("optionsMenu.php");
+        require_once("updateAccountSettings.php");
+        require_once("confirmationUpdate.php");
+        
     ?>
 </head>
 
@@ -66,42 +69,67 @@
 		$_SESSION['accountIdCounter'] = 90000000;
 		
 		if (! array_key_exists('nextStage', $_SESSION) )
-		{
+		{	
+			//login page
 			requestUsername();
 			$_SESSION['nextStage'] = "option";
 		}
 		elseif($_SESSION['nextStage'] == "option" and isset($_POST["SignUp"]))
 		{
+			//sign up page
 			requestSignup();
 			$_SESSION['nextStage'] = "option";
 		}
 		elseif($_SESSION['nextStage'] == "option" and isset($_POST["submit_btn"]))
 		{
+			//confirmation page for registration
 			confirmationPage();
 			$_SESSION['nextStage'] = "option";
 		}
 		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Logon"]))
 		{
+			//back to login page after registration
 			requestUsername();
 			$_SESSION['nextStage'] = "option";
 		}
 		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Login"]))
 		{
+			//menu to pay for meter, pay ticket, etc
 			optionsMenu();
 			$_SESSION['nextStage'] = "option";
 		}
 		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Cancel"]))
-		{
+		{	
+			//cancel button sends you back to the options menu
 			optionsMenu();
 			$_SESSION['nextStage'] = "option";
 		}
 		elseif($_SESSION['nextStage'] == "option" and isset($_POST["CreditMeter"]))
-		{
+		{	
+			//pay for meter page
 			requestMeter2();
 			$_SESSION['nextStage'] = "option";
 		}
-		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Logout"]))
+		elseif($_SESSION['nextStage'] == "option" and isset($_POST["UpdateAccountSettings"]))
 		{
+			//page to update account settings
+			updateAccountSettings();
+			$_SESSION['nextStage'] == "option";
+		}
+		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Update"]))
+		{
+			//confirmation of update page
+			confirmationUpdate();
+			$_SESSION['nextStage'];
+		}
+		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Back"]))
+		{
+			optionsMenu();
+			$_SESSION['nextStage'] = "option";
+		}
+		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Logout"]))
+		{	
+			//clicks logout button to go back to username
 			session_destroy();
 			session_regenerate_id(TRUE);
 			session_start();
