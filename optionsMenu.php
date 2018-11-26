@@ -13,8 +13,7 @@ function optionsMenu()
         $conn = hsu_conn($username, $password);
         
     }
-    if (!array_key_exists("meter_id", $_POST))
-    {
+    
             //$order_query_str = 'select meterid from Parking_Meter';
             //$order_query_stmt = oci_parse($conn, $order_query_str);
             //oci_execute($order_query_stmt, OCI_DEFAULT);
@@ -36,7 +35,7 @@ function optionsMenu()
 
 <?php
 
-	}
+	
 		
 }
 ?>
