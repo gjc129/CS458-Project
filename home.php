@@ -19,7 +19,7 @@
     <title> parkingFriendly</title>
     <meta charset="utf-8" />
 
-    <link href="parkingFriendly.css" type="text/css" rel="stylesheet" />
+    <link href="css/parkingFriendly.css" type="text/css" rel="stylesheet" />
     <link rel="stylesheet" type="text/css" href="//fonts.googleapis.com/css?family=Lobster" />
     <!--link href="http://users.humboldt.edu/smtuttle/styles/normalize.css"
           type="text/css" rel="stylesheet" /-->
@@ -33,66 +33,72 @@
 
 	<script src="leaflet.js" ></script>
 
-	<link rel="stylesheet" href="leaflet.css"/>
-
 
     <?php
-		require_once("request_username.php");
-        require_once("request_meter.php");
-		require_once("request_signup.php");
-		require_once("confirmation_page.php");
-        //require_once("hsu_conn.php");
-        //require_once("custom_farewell.php");
-        //require_once("complain_and_exit.php");
-        //require_once("build_mini_form.php");
-        require_once("options_menu.php");
+		require_once("requestUsername.php");
+		require_once("requestMeter.php");
+		require_once("requestSignup.php");
+		require_once("confirmationPage.php");
+		require_once("hsu_conn.php");
+        require_once("optionsMenu.php");
     ?>
 </head>
 
 <body>
 
-<div style="border:solid;outline:ridge darkgrey;; padding: 1em; margin:1em;">
+	<div style="border:solid;outline:ridge darkgrey;; padding: 1em; margin:1em;">
         <!--img src="../parkingFriendly.jpeg" alt="parkingFriendly logo" height="30%" width="30%"/-->
 
-<h1>parkingFriendly</h1>
-</div>
-<h2><!--<a href="home.php"> --> parking meter payment system<!--</a> --></h2>
-    <?php
-	
+		<h1>parkingFriendly</h1>
+	</div>
+
+	<h2><!--<a href="home.php"> --> parking meter payment system<!--</a> --></h2>
+	<?php
+		
 		//these variables are used to do login to DB
-		$oci_username = "parkingFriendly";
-		$oci_password = "parkingcs458";
-	
-    if (! array_key_exists('next-stage', $_SESSION) )
-    {
-     	request_signup();
-        //$_SESSION['next-stage'] = "confirmation";
-		$_SESSION['next-stage'] = "login";
-    }
-	elseif($_SESSION['next-stage'] == "login" and isset($_POST["register"]))
-	{
-		//confirmation page
-		confirmation_page();
-		$_SESSION['next-stage'] = "login";
-	}
-	elseif($_SESSION['next-stage'] == "login" and isset($_POST["login"]))
-	{
-		//confirmation page 
-		request_username();
-		$_SESSION['next-stage'] = "option";
-	}
-	elseif($_SESSION['next-stage'] == "option")
-	{
-		options_menu();
-		$_SESSION['next-stage'] = "";
+		$ociUsername = "parkingFriendly";
+		$ociPassword = "parkingcs458";
+		$_SESSION['ociUsername'] = $ociUsername;
+		$_SESSION['ociPassword'] = $ociPassword;
 		
-	}
-	else
-	{
-		session_destroy();
-		session_regenerate_id(TRUE);
-		session_start();
+		$_SESSION['playerIdCounter'] = 100000;
+		$_SESSION['accountIdCounter'] = 90000000;
 		
-		request_signup();
-	}
-	
+		if (! array_key_exists('nextStage', $_SESSION) )
+		{
+			requestUsername();
+			$_SESSION['nextStage'] = "option";
+		}
+		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Sign Up"]))
+		{
+			requestSignup();
+			$_SESSION['nextStage'] = "option";
+		}
+		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Register"]))
+		{
+			confirmationPage();
+			$_SESSION['nextStage'] = "option";
+		}
+		elseif($_SESSION['nextStage'] == "option" and isset($_POST["Login"]))
+		{
+			optionsMenu();
+			$_SESSION['nextStage'] = "option";
+			
+		}
+		elseif($_SESSION['nextStage'] = "option" and isset($_POST['Credit Meter']))
+		{
+			requestMeter();
+			$_SESSION['nextStage'] = "option";
+		}
+		else
+		{
+			session_destroy();
+			session_regenerate_id(TRUE);
+			session_start();
+			
+			requestUsername();
+			
+		}
+		?>
+</body>
+</html>
