@@ -8,8 +8,8 @@ function requestSignup()
 		<form method="post"
 				  action="<?= htmlentities($_SERVER['PHP_SELF'], 
 										   ENT_QUOTES) ?>">
-			<fieldset>
-				<legend><strong> Please enter your information: </strong></legend>
+			<fieldset><div class="Sign Up">
+				<div><strong> Please enter your information: </strong></div>
 
 				<label for="username"><kbd> Email Address:</kbd></label>
 				<input type="text" name="username" id="username" /><br>
@@ -43,9 +43,10 @@ function requestSignup()
 				<br>
 				<div class="submit">
 				<input id="submit_btn" type="submit" value="Register" name="submit_btn"/>
+				<input id="goback" type="submit" value="Go Back" name="goback" />
 				</div>
 
-			</fieldset>
+			</div></fieldset>
 			 
 		</form>
 	
@@ -82,6 +83,7 @@ function requestSignup()
 									
 									oci_execute($queryAccountStmt, OCI_DEFAULT);
 									
+									
 									if(oci_num_rows($queryAccountStmt)>0)
 									{
 											echo '<script type="text/javascript"> alert("username already exists... try another username") </script>';
@@ -99,6 +101,11 @@ function requestSignup()
 											
 											oci_execute($insertAccountStmt, OCI_DEFAULT);
 											
+											oci_free_statement($insertAccountStmt);
+    										oci_close($conn);
+    										
+    										$conn = hsu_conn($ociUsername, $ociPassword);
+											
 											$insertPersonStr = "insert into Person values (:personId, :firstName, :lastName, :phoneNumber)";
 											$insertPersonStmt = oci_parse($conn, $insertPersonStr);
 											
@@ -109,6 +116,11 @@ function requestSignup()
 											
 											oci_execute($insertPersonStmt, OCI_DEFAULT);
 											
+											oci_free_statement($insertPersonStmt);
+    										oci_close($conn);
+    										
+    										$conn = hsu_conn($ociUsername, $ociPassword);
+											
 											$insertUsersStr = "insert into Users values(0, :licensePlateNum, :vehicleColor, :personId)";
 											$insertUsersStmt = oci_parse($conn, $insertUsersStr);
 											
@@ -117,6 +129,9 @@ function requestSignup()
 											oci_bind_by_name($insertUsersStmt, ":personId", $personId);
 											
 											oci_execute($insertUsersStmt, OCI_DEFAULT);
+											
+											oci_free_statement($insertUsersStmt);
+    										oci_close($conn);
 											
 											if($insertAccountStmt)
 											{
@@ -130,7 +145,6 @@ function requestSignup()
 									}
 
 							}
-
 
 					}
 	

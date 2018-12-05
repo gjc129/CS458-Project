@@ -28,6 +28,12 @@ function updateAccountSettings()
 		
 		oci_execute($queryAccountInfoStmt, OCI_DEFAULT);
 				
+		oci_free_statement($queryAccountInfoStmt);
+		oci_close($conn);
+
+		$conn = hsu_conn($ociUsername, $ociPassword);
+		
+		
 	?>
 			<fieldset>
 				
@@ -87,6 +93,12 @@ function updateAccountSettings()
 			oci_bind_by_name($updateAccountSettingsStmt, ":password", $password);
 			
 			oci_execute($updateAccountSettingsStmt, OCI_DEFAULT);
+			oci_commit($conn);
+			
+			oci_free_statement($insertAccountStmt);
+    		oci_close($conn);
+    										
+    		$conn = hsu_conn($ociUsername, $ociPassword);
 			
 			$updatePersonSettingsStr = "update Person
 										set phonenumber = :phoneNumber
@@ -95,6 +107,14 @@ function updateAccountSettings()
 										where username = :username";
 										
 			$updatePersonSettingsStmt = oci_parse($conn, $updatePersonSettingsStr);
+			
+			oci_execute($updatePersonSettingsStmt, OCI_DEFAULT);
+			oci_commit($conn);
+			
+			oci_free_statement($insertAccountStmt);
+    		oci_close($conn);
+    										
+    		$conn = hsu_conn($ociUsername, $ociPassword);
 			
 			oci_bind_by_name($updatePersonSettingsStmt, ":phoneNumber", $phoneNumber);
 			oci_bind_by_name($updatePersonSettingsStmt, ":username", $username);
@@ -113,9 +133,12 @@ function updateAccountSettings()
 			oci_bind_by_name($updateUsersSettingsStmt, ":licensePlateNum", $licensePlateNum);
 			
 			oci_execute($updateUsersSettingsStmt, OCI_DEFAULT);
+			oci_commit($conn);
+			
+			oci_free_statement($insertAccountStmt);
+    		oci_close($conn);		
 		
 		}
-		
 
 }
 ?>

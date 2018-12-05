@@ -4,6 +4,7 @@ function optionsMenu()
 	if ( array_key_exists("username", $_POST))
     {
 		$ociUsername = $_SESSION['ociUsername'];
+		$_SESSION['username'] = $_POST['username'];
         // not doing ANYTHING with the password except
         //     trying to log in with it...
 
@@ -22,8 +23,10 @@ function optionsMenu()
             <form action="<?= htmlentities($_SERVER['PHP_SELF'],ENT_QUOTES) ?>"" method="post">
             
             <label> Meters Map </label>
-			
+		<h3> Welcome <?php echo $_SESSION['username'] ?> </h3><br>			
+	<div id="map-wrapper">
             <div id ="mapid"></div>
+	</div>
             
             <fieldset>
 				<div class="submit">

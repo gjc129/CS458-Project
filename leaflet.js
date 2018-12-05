@@ -1,12 +1,23 @@
 window.onload = function(e)
 {
 
-	var mymap = L.map('mapid').setView([40.875770, -124.078639], 18);
+	var mymap = L.map('mapid').setView([40.875770, -124.078639], 15.5);
 
+//var zoomLevel = 13;
+//var xCoordinate = 40.875770;
+//var yCoordinate = -124.078639; 
 
+/*
+L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={pk.eyJ1IjoiYmFrZWRub3RmcmllZDEyNSIsImEiOiJjam5nZTN4cjEwMjdlM3FucjRxcW1teXRuIn0.yZ53U04Y-hb31wLfEpC5jg}', 
+{
+	id: 'mapbox.streets'
+}).addTo(mymap);
+
+*/
 
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 			maxZoom: 20,
+			minZoom: 15,
 			attribution: 'Map data &copy; <a href="https://www.openstreetmap.org/">OpenStreetMap</a> contributors, ' +
 				'<a href="https://creativecommons.org/licenses/by-sa/2.0/">CC-BY-SA</a>, ' +
 				'Imagery © <a href="https://www.mapbox.com/">Mapbox</a>',
@@ -21,17 +32,29 @@ window.onload = function(e)
 	
 	console.log(loggedMeter.value);
 	
+	//var loggedString = JSON.stringify(loggedMeter);
 	
+	//console.log(loggedString);
+	
+	/*
+	function log(meter)
+	{
+		console.log(meter);
+		
+	}
+
+	*/
 //----------------------------------------------------------------------------	
 // Close Event Listeners
 //----------------------------------------------------------------------------	
+
 
 	
 //----------------------------------------------------------------------------	
 // Parking Meter location codes:
 //
-// 0: North Campus 		0001-0000
-// 1: Library			1001-1000
+// 0: North Campus 		0001-0014
+// 1: Library			1001-1020
 // 2: Center Campus		2001-2038
 // 3: East Campus		3001-3041
 // 4: South Campus		4001-4078
@@ -40,7 +63,121 @@ window.onload = function(e)
 //----------------------------------------------------------------------------
 
 //----------------------------------------------------------------------------
-// Center Campus
+// North Campus
+//----------------------------------------------------------------------------
+    var meter0001 = L.marker([40.879790, -124.080697]).addTo(mymap)
+        .bindPopup('Meter ID: 0001');
+
+    var meter0002 = L.marker([40.879786, -124.080626]).addTo(mymap)
+        .bindPopup('Meter ID: 0002');
+
+    var meter0003 = L.marker([40.879771, -124.080550]).addTo(mymap)
+        .bindPopup('Meter ID: 0003');
+
+    var meter0004 = L.marker([40.879759, -124.080480]).addTo(mymap)
+        .bindPopup('Meter ID: 0004');
+
+    var meter0005 = L.marker([40.879742, -124.080397]).addTo(mymap)
+        .bindPopup('Meter ID: 0005');
+
+    var meter0006 = L.marker([40.879728, -124.080320]).addTo(mymap)
+        .bindPopup('Meter ID: 0006');
+
+    var meter0007 = L.marker([40.879712, -124.080243]).addTo(mymap)
+        .bindPopup('Meter ID: 0007');
+
+    var meter0008 = L.marker([40.879692, -124.080168]).addTo(mymap)
+        .bindPopup('Meter ID: 0008');
+
+    var meter0009 = L.marker([40.879677, -124.080093]).addTo(mymap)
+        .bindPopup('Meter ID: 0009');
+
+    var meter0010 = L.marker([40.879660, -124.080014]).addTo(mymap)
+        .bindPopup('Meter ID: 0010');
+
+    var meter0011 = L.marker([40.879644, -124.079936]).addTo(mymap)
+        .bindPopup('Meter ID: 0011');
+
+    var meter0012 = L.marker([40.879627, -124.079856]).addTo(mymap)
+        .bindPopup('Meter ID: 0012');
+        
+    var meter0013 = L.marker([40.879611, -124.079782]).addTo(mymap) 
+    	.bindPopup('Meter ID: 0013');
+    	
+    var meter0014 = L.marker([40.879596, -124.079713]).addTo(mymap)
+		.bindPopup('Meter ID: 0014');
+		
+//----------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------
+// 	Library
+//----------------------------------------------------------------------------
+
+
+    var meter1001 = L.marker([40.877112, -124.081155]).addTo(mymap)
+        .bindPopup('Meter ID: 1001');
+
+    var meter1002 = L.marker([40.877126, -124.081096]).addTo(mymap)
+        .bindPopup('Meter ID: 1002');
+
+    var meter1003 = L.marker([40.877139, -124.081031]).addTo(mymap)
+        .bindPopup('Meter ID: 1003');
+
+    var meter1004 = L.marker([40.877151, -124.080968]).addTo(mymap)
+        .bindPopup('Meter ID: 1004');
+
+    var meter1005 = L.marker([40.876999, -124.080875]).addTo(mymap)
+        .bindPopup('Meter ID: 1005');
+
+    var meter1006 = L.marker([40.876980, -124.080892]).addTo(mymap)
+        .bindPopup('Meter ID: 1006');
+
+    var meter1007 = L.marker([40.876957, -124.080908]).addTo(mymap)
+        .bindPopup('Meter ID: 1007');
+
+    var meter1008 = L.marker([40.876935, -124.080923]).addTo(mymap)
+        .bindPopup('Meter ID: 1008');
+
+    var meter1009 = L.marker([40.876911, -124.080939]).addTo(mymap)
+        .bindPopup('Meter ID: 1009');
+
+    var meter1010 = L.marker([40.876891, -124.080951]).addTo(mymap)
+        .bindPopup('Meter ID: 1010');
+
+    var meter1011 = L.marker([40.876868, -124.080966]).addTo(mymap)
+        .bindPopup('Meter ID: 1011');
+
+    var meter1012 = L.marker([40.876846, -124.080979]).addTo(mymap)
+        .bindPopup('Meter ID: 1012');
+
+    var meter1013 = L.marker([40.876822, -124.080995]).addTo(mymap)
+        .bindPopup('Meter ID: 1013');
+
+    var meter1014 = L.marker([40.876801, -124.081007]).addTo(mymap)
+        .bindPopup('Meter ID: 1014');
+
+    var meter1015 = L.marker([40.876779, -124.081026]).addTo(mymap)
+        .bindPopup('Meter ID: 1015');
+
+    var meter1016 = L.marker([40.876758, -124.081034]).addTo(mymap)
+        .bindPopup('Meter ID: 1016');
+
+    var meter1017 = L.marker([40.876736, -124.081052]).addTo(mymap)
+        .bindPopup('Meter ID: 1017');
+
+    var meter1018 = L.marker([40.876715, -124.081066]).addTo(mymap)
+        .bindPopup('Meter ID: 1018');
+
+    var meter1019 = L.marker([40.876691, -124.081077]).addTo(mymap)
+        .bindPopup('Meter ID: 1019');
+
+    var meter1020 = L.marker([40.876670, -124.081091]).addTo(mymap)
+        .bindPopup('Meter ID: 1020');
+        
+//----------------------------------------------------------------------------
+
+//----------------------------------------------------------------------------
+//		Center Campus
 //----------------------------------------------------------------------------
 
 	var meter2001 = L.marker([40.874829, -124.079730]).addTo(mymap)
@@ -540,6 +677,209 @@ window.onload = function(e)
 // Description: Click event listener that will give a value of meter number
 // when clicked on.
 //----------------------------------------------------------------------------
+   meter0001.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "0001"
+   });
+
+   meter0002.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "0002"
+   });
+
+   meter0003.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "0003"
+   });
+
+   meter0004.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "0004"
+   });
+
+   meter0005.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "0005"
+   });
+
+   meter0006.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "0006"
+   });
+
+   meter0007.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "0007"
+   });
+
+   meter0008.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "0008"
+   });
+
+   meter0009.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "0009"
+   });
+
+   meter0010.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "0010"
+   });
+
+   meter0011.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "0011"
+   });
+
+   meter0012.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "0012"
+   });
+
+   meter0013.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "0013"
+   });
+   
+   meter0014.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "0014"
+   });
+
+   meter1001.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1001"
+   });
+
+   meter1002.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1002"
+   });
+
+   meter1003.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1003"
+   });
+
+   meter1004.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1004"
+   });
+
+   meter1005.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1005"
+   });
+
+   meter1006.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1006"
+   });
+
+   meter1007.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1007"
+   });
+
+   meter1008.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1008"
+   });
+
+   meter1009.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1009"
+   });
+
+   meter1010.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1010"
+   });
+
+   meter1011.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1011"
+   });
+
+   meter1012.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1012"
+   });
+
+   meter1013.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1013"
+   });
+
+   meter1014.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1014"
+   });
+
+   meter1015.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1015"
+   });
+
+   meter1016.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1016"
+   });
+
+   meter1017.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1017"
+   });
+
+   meter1018.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1018"
+   });
+
+   meter1019.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1019"
+   });
+
+   meter1020.on("click", function(event){
+      var clickedMarker = event.layer;
+      var textbox = document.getElementById("meterid");
+      textbox.value = "1020"
+   });
 
    meter2001.on("click", function(event){
       var clickedMarker = event.layer;
