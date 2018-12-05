@@ -3,17 +3,7 @@ window.onload = function(e)
 
 	var mymap = L.map('mapid').setView([40.875770, -124.078639], 18);
 
-//var zoomLevel = 13;
-//var xCoordinate = 40.875770;
-//var yCoordinate = -124.078639; 
 
-/*
-L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={pk.eyJ1IjoiYmFrZWRub3RmcmllZDEyNSIsImEiOiJjam5nZTN4cjEwMjdlM3FucjRxcW1teXRuIn0.yZ53U04Y-hb31wLfEpC5jg}', 
-{
-	id: 'mapbox.streets'
-}).addTo(mymap);
-
-*/
 
 	L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token=pk.eyJ1IjoibWFwYm94IiwiYSI6ImNpejY4NXVycTA2emYycXBndHRqcmZ3N3gifQ.rJcFIG214AriISLbB6B5aw', {
 			maxZoom: 20,
@@ -31,18 +21,7 @@ L.tileLayer('https://api.tiles.mapbox.com/v4/{id}/{z}/{x}/{y}.png?access_token={
 	
 	console.log(loggedMeter.value);
 	
-	//var loggedString = JSON.stringify(loggedMeter);
 	
-	//console.log(loggedString);
-	
-	/*
-	function log(meter)
-	{
-		console.log(meter);
-		
-	}
-
-	*/
 //----------------------------------------------------------------------------	
 // Close Event Listeners
 //----------------------------------------------------------------------------	
