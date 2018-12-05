@@ -1,6 +1,10 @@
-#mapid { height: 80vh; }
-
-#shelfForm { height: 20vh; }
+#mapid 
+{ 
+	height: 35em; 
+	margin-left: 10em;
+	margin-right: 10em;
+	
+}
 
 #upper
 {
@@ -12,7 +16,8 @@
         display:inline-block;
 }
 
-html, body {
+html, body 
+{
     margin: 0;
     height: 100%;
 }

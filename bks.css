@@ -1,0 +1,58 @@
+*	by Nicholas Greer
+        mod: 27 Mar 2018
+*/
+
+head
+{
+        font-family:   Helvetica;
+}
+
+body
+{
+        overflow:   hidden;
+        font-family:   Helvetica;
+        background:   grey;
+        text-align:   center;
+        margin-left:   2em;
+        margin-right:   2em;
+}
+
+a
+{
+        color:   #1e5f8d;
+        text-decoration:   none;
+        transition:   0.3s ease-in-out;
+}
+
+a:link
+{
+        color:   orange;
+}
+
+a:visited
+{
+        color:   green;
+}
+
+a:hover
+{
+        color:   red;
+}
+
+p
+{
+        margin-left:   auto;
+        margin-right:   auto;
+        padding:   1em;
+}
+
+label
+{
+        float:   clear;
+}
+
+fieldset
+{
+        font-family:   bold;
+        background-color:   rgb(0,103,135)
+}
